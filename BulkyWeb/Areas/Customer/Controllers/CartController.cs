@@ -25,7 +25,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers {
 
 
         public IActionResult Index() {
-
+            var k="";
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
 
